@@ -25,4 +25,4 @@ Entre na pasta do projeto
 
 > npm start
 
-<a href="mailto:joelcio_psx@hotmail.com">joelcio_psx@hotmail.com</a>
+#<a href="mailto:joelcio_psx@hotmail.com">joelcio_psx@hotmail.com</a>
