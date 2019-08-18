@@ -1,6 +1,6 @@
-import {Entity, model, property} from '@loopback/repository';
+import { Entity, model, property } from '@loopback/repository';
 
-@model({settings: {strict: false}})
+@model({ settings: { strict: false } })
 export class Student extends Entity {
   @property({
     type: 'string',
@@ -10,6 +10,7 @@ export class Student extends Entity {
   @property({
     type: 'number',
     id: true,
+    generated: true,
   })
   id?: number;
 
@@ -17,6 +18,13 @@ export class Student extends Entity {
     type: 'string',
   })
   description?: string;
+
+  @property({
+    type: Date,
+    default: new Date()
+  })
+  createdAt?: Date;
+
 
 
   // Define well-known properties here
